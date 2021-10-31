@@ -12,7 +12,7 @@ Concept: mixing 'guessing random numbers' and 'bingo' games
 
 The grid size of the 'bingo' board will be 3x3 or 4x4 (if the grid size includes 5x5, we are afraid the game will take too long).
 
-A player will need to choose the grid size first (by inputting character '3' or character '4'), and then play the game of 'guessing random numbers'. (If the player has already had a game playing beforehand, press 'L' then the saved game will be reloaded.) If the player enters other characters, the player will be asked "DO YOU WANT TO EXIT?". If the player presses character "Y", player will exit the game. If the player presses other characters, the player will need to choose the grid size again. When playing the game of 'guessing random number', the player will have 7 chances to guess the number. (WARNING: YOU CANNOT SAVE YOUR PROGRESS IN 'GUESSING RANDOM NUMBER' GAME.) 
+A player will need to choose the grid size first (by inputting character '3' or character '4'), and then play the game of 'guessing random numbers'. (If the player has already had a game playing beforehand, press 'L' then the saved game will be reloaded.) If the player enters other characters, the player will be asked "DO YOU WANT TO EXIT?". If the player presses character "Y", player will exit the game. If the player presses other characters, the player will need to choose the grid size again. When playing the game of 'guessing random number', if the player has chosen 3x3 grid, the player will have 7 chances to guess the number. If the player has chosen 4x4 grid, the player will have 12 chances. (WARNING: YOU CANNOT SAVE YOUR PROGRESS IN 'GUESSING RANDOM NUMBER' GAME.) 
 
 If the player chooses 3x3 grid, a vector v = {1, 2, 3, 4, 5, 6, 7, 8, 9} will be initiated. If the player chooses 4x4 grid, vector v = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16} will be initiated.
 
@@ -26,7 +26,7 @@ int Number_of_attempts_left = Number_of_attempts_allowed
 
 int player's_input
 
-When the player inputs a number (stored into variable 'player's_input'), the player's_input in the vector will be compared to Number_to_be_guessed. At the 1st/2nd/3rd/4th/5th/6th/7th (last) trial, if the two numbers match:
+When the player inputs a number (stored into variable 'player's_input'), the player's_input in the vector will be compared to Number_to_be_guessed. At the 1st/2nd/3rd/.../last trial, if the two numbers match:
 
 1. print out 'Yeah! this is the number we want!'
 
