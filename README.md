@@ -60,5 +60,3 @@ After the player has successfully or unsucessfully guessed a number, the number 
 Code requirement 5: Program codes in multiple files
 
 Basically there are 2 .cpp files, one is the main.cpp while the other is run.cpp. In the main.cpp there are multiples function including 'run_guessing_random_number_game', 'save' and 'load', which will perform their task in the main function, which run.cpp is for deciding whether the specific node has the correct guess and will return eiter int 1 or int 0, it consist of a 'run' funtion which is affiliated under the 'run_guessing_random_number_game'. A header file is also created for triggering.
-
-(The project was originally created in my partner's Github repository. Link of the original project: https://github.com/angus6291/COMP2113-Project/blob/main/README.md)
