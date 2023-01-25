@@ -1,6 +1,6 @@
 # Game Project 'TRY YOUR LUCK' Brief introduction
 
-A Production of: Tse Tsz Chun & Lam Chun Yin Angus
+A Production of: Tse Tsz Chun John & Lam Chun Yin Angus
 
 # Game Introduction
 
@@ -22,15 +22,27 @@ int user_input_for_node;
 
 Game flow:
 
-1. After triggering the game, the player could enter either 'L', 'N' or 'Q'. 'L': Load the previous saved game from Savefile.txt; 'N': Start a new game; 'Q': Quit the game
+1. After triggering the game, the player could enter either 'L', 'N' or 'Q'. 
 
-2. After entering the command, if 'L' is chosen, then function 'load' will be called to load the saved datum into out_put vector. If 'N' is chosen, new vector of out_put = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'} will be initiated. Meanwhile a set of 'correct answer' is randomly generated and stored in the vector 'to_be_guessed'.
+'L': Load the previous saved game from Savefile.txt
 
-3. The current status of game will be displayed. The characters 'A'-'I' are used for locating each node in the grid, while 'X' and 'O' are used for determining whether the player is able to guess the correct answer at a certain node within the randomly generated maximum number of guesses allowed (i.e., int i in run.cpp).
+'N': Start a new game
+
+'Q': Quit the game
+
+2. After entering the command,
+
+If 'L' is chosen, then function 'load' will be called to load the saved datum into out_put vector.
+
+If 'N' is chosen, new vector of out_put = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'} will be initiated. Meanwhile a set of 'correct answer' is randomly generated and stored in the vector 'to_be_guessed'.
+
+3. The current status of game will be displayed. 
+
+The characters 'A'-'I' are used to locate each node in the grid, while 'X' and 'O' are used to determine whether or not the player can guess the correct answer at a certain node, within the randomly generated maximum number of guesses allowed (i.e., int i in 'run.cpp').
 
 4. Assume 'A' is chosen. The player will be guided to input an interger between 1-9. The amount of trials allowed is clearly stated. A while-loop is run to read the input and return either 'true' or 'false' for the specific node.
 
-5. Then the result is returned to the 'run_guessing_random_number_game' funtion in main.cpp, where there's another while-loop for looping through all the nodes. After all, the result of whether there is bingo will be displayed.
+5. The result is then returned to the 'run_guessing_random_number_game' funtion in 'main.cpp', where there's another while-loop for looping through all the nodes. After all, the result of whether or not 'bingo' is achieved will be displayed.
 
 6. The game is named "Try your luck" because it involves 2 levels of luck tester. The first level is the 'guessing random number' sub-game in each node of the bingo board. The second level is the 'bingo' main game.
 
@@ -58,6 +70,16 @@ After the player has successfully or unsucessfully guessed a number, the charact
 Code requirement 5: Program codes in multiple files
 
 Basically there are 2 .cpp files, one is the 'main.cpp' while the other is 'run.cpp'. In 'main.cpp', there are multiple functions including 'run_guessing_random_number_game', 'save' and 'load'. These functions will perform their tasks in the main function. 'run.cpp' is for deciding whether or not the specific node has the correct guess, and the 'run.cpp' file will return either integer '1' or '0'. It consists of a 'run' funtion which is affiliated under the 'run_guessing_random_number_game'. A header file is also created for triggering the function.
+
+# Extensions that can be considered
+
+1. Including different sizes of grids
+
+Originally, we planned to include larger square grid sizes (for instance, 4x4 ad 5x5 grid sizes) for player's selection. To do so, we need to get other parts done first. However, due to technical and time constraints, we had no choice but to abandon this plan and focus on getting other parts done. If we were given more time for this project, and we mastered the techniques required to write the codes in a cleaner and faster way, we would have included the proposed options of larger square grid sizes.
+
+2. Supporting different versions
+
+We may remake this game project such that it supports HTML5 (with CSS3) web version and/or mobile app version (i.e., Android and iOS version). But again, due to the same reasons, we would not be able to make this extension to realize this great thought. 
 
 # Remarks
 
