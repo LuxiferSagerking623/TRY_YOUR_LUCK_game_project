@@ -36,9 +36,7 @@ If 'L' is chosen, then function 'load' will be called to load the saved datum in
 
 If 'N' is chosen, new vector of out_put = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'} will be initiated. Meanwhile a set of 'correct answer' is randomly generated and stored in the vector 'to_be_guessed'.
 
-3. The current status of game will be displayed. 
-
-The characters 'A'-'I' are used to locate each node in the grid, while 'X' and 'O' are used to determine whether or not the player can guess the correct answer at a certain node, within the randomly generated maximum number of guesses allowed (i.e., int i in 'run.cpp').
+3. The current status of game will be displayed. The characters 'A'-'I' are used to locate each node in the grid, while 'X' and 'O' are used to determine whether or not the player can guess the correct answer at a certain node, within the randomly generated maximum number of guesses allowed (i.e., int i in 'run.cpp').
 
 4. Assume 'A' is chosen. The player will be guided to input an interger between 1-9. The amount of trials allowed is clearly stated. A while-loop is run to read the input and return either 'true' or 'false' for the specific node.
 
