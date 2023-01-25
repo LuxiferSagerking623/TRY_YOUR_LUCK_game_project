@@ -22,14 +22,9 @@ int user_input_for_node;
 
 Game flow:
 
-1. After triggering the game, the player could enter either 'L', 'N' or 'Q'.
-'L': Load the previous saved game from Savefile.txt
-'N': Start a new game
-'Q': Quit the game
+1. After triggering the game, the player could enter either 'L', 'N' or 'Q'. 'L': Load the previous saved game from Savefile.txt; 'N': Start a new game; 'Q': Quit the game
 
-2. After entering the command, 
-If 'L' is chosen, then function 'load' will be called to load the saved datum into out_put vector.
-If 'N' is chosen, new vector of out_put = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'} will be initiated. Meanwhile a set of 'correct answer' is randomly generated and stored in the vector 'to_be_guessed'.
+2. After entering the command, if 'L' is chosen, then function 'load' will be called to load the saved datum into out_put vector. If 'N' is chosen, new vector of out_put = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'} will be initiated. Meanwhile a set of 'correct answer' is randomly generated and stored in the vector 'to_be_guessed'.
 
 3. The current status of game will be displayed. The characters 'A'-'I' are used for locating each node in the grid, while 'X' and 'O' are used for determining whether the player is able to guess the correct answer at a certain node within the randomly generated maximum number of guesses allowed (i.e., int i in run.cpp).
 
